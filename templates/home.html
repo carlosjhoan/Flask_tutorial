@@ -14,6 +14,9 @@
         height: 360px;
         object-fit: cover
       }
+      /*body{
+        height: 110vh
+      }*/
       /*.roboto-thin {
         font-family: "Roboto", sans-serif;
         font-weight: 100;
@@ -52,14 +55,19 @@
   
   <body>
     <div class = "container">
-      <h1 class = "text-center">FlaskTutorial By CarlosJhoan</h1>
+      <h1 class = "text-center  mt-4 mb-4">{{company_name}}</h1>
       <img class = "img-fluid" id = "banner" src="https://e7e256ce-5b6d-4d09-a3f1-21c715703e92-00-1ygup2ym03t0p.kirk.replit.dev:5000/static/kitchen.jpg"  alt="">
-      <h2 class = "text-center">About CarlosJhoan</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2 class = "text-center  mt-4 mb-4">About CarlosJhoan</h2>
+      <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <h2 class = "text-center">Open Positions</h2>
-      <p>TODO - Show the jobs here</p>
-      <div style= "text-align:center;" >
-        <button style = "cursor:pointer;">Contact Us</button>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobItem.html' %}
+        {% endfor %}
+      </div>
+      <div class = "text-center" >
+        <button style = "cursor:pointer;" class = "btn btn-outline-primary">Contact Us</button>
+        <p class = "mt-4 mb-4"><em>Copyright 2024, CarlosJhoan</em></p>
       </div>
       
     </div>
