@@ -33,6 +33,17 @@ JOBS = [
     'id': 5,
     'title': 'UX/UI',
     'location': 'Bucaramanga, Colombia',
+  },
+  {
+    'id': 6,
+    'title': 'Mobile Android Developer',
+    'location': 'Girón, Colombia',
+  },
+  {
+    'id': 7,
+    'title': 'Administrador de base de Datos',
+    'location': 'Medellín, Colombia',
+    'salary': 'COP $7,000,000'
   }
 ]
 
@@ -43,3 +54,4 @@ def hello_world():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug = True)
+
