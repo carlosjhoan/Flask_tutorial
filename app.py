@@ -44,6 +44,12 @@ JOBS = [
     'title': 'Administrador de base de Datos',
     'location': 'Medellín, Colombia',
     'salary': 'COP $7,000,000'
+  },
+  {
+    'id': 8,
+    'title': 'Front End',
+    'location': 'Girón, Colombia',
+    'salary': 'COP $1,000,000'
   }
 ]
 
